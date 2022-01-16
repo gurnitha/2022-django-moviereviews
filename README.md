@@ -118,3 +118,12 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         new file:   movie/templates/movie/signup.html
         modified:   movie/urls.py
         modified:   movie/views.py
+
+
+#### 9. Models: Create Movie model
+
+        modified:   README.md
+        new file:   movie/migrations/0001_initial.py
+        modified:   movie/models.py
+
+
