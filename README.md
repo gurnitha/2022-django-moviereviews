@@ -218,3 +218,9 @@ My exercise based on Beginning Django 3 Development by Greg Lim
 	        "body" text NOT NULL, 
 	        "date" date NOT NULL);
         COMMIT;
+
+
+#### 14. Displaying objects in Admin
+
+        modified:   README.md
+        modified:   movie/models.py
