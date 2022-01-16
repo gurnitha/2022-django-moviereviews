@@ -80,3 +80,10 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         new file:   movie/tests.py
         new file:   movie/views.py
 
+
+#### 5. URLs
+
+        modified:   README.md
+        modified:   config/urls.py
+        new file:   movie/urls.py
+        modified:   movie/views.py
