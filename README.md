@@ -94,3 +94,9 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         new file:   movie/templates/movie/about.html
         new file:   movie/templates/movie/home.html
         modified:   movie/views.py
+
+
+#### 7. Adding Bootstrap
+
+        modified:   README.md
+        modified:   movie/templates/movie/home.html
