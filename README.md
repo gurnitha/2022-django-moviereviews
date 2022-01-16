@@ -151,3 +151,13 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   movie/admin.py
 
 
+#### 11. DISPLAYING OBJECTSFROM ADMIN
+
+        Works:
+
+        1. Retrieve and display movies form db to the home page
+        2. Implementing Search
+        
+        modified:   README.md
+        modified:   movie/templates/movie/home.html
+        modified:   movie/views.py
