@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Locals
     'movie.apps.MovieConfig',
-
+    'news.apps.NewsConfig',
 ]
 
 MIDDLEWARE = [

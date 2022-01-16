@@ -157,7 +157,33 @@ My exercise based on Beginning Django 3 Development by Greg Lim
 
         1. Retrieve and display movies form db to the home page
         2. Implementing Search
-        
+
         modified:   README.md
         modified:   movie/templates/movie/home.html
         modified:   movie/views.py
+
+
+#### 12. CREATING A NEWS APP
+
+        Works:
+
+        1. Create news app
+        2. Create news page
+        3. Create News model
+        4. Retrieve and display all movies
+        5. Filtering retrieve by date of LIFO and display all movies
+        6. Add bootstrap to news page
+        
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   news/__init__.py
+        new file:   news/admin.py
+        new file:   news/apps.py
+        new file:   news/migrations/0001_initial.py
+        new file:   news/migrations/__init__.py
+        new file:   news/models.py
+        new file:   news/templates/news/news.html
+        new file:   news/tests.py
+        new file:   news/urls.py
+        new file:   news/views.py
