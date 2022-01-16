@@ -127,3 +127,27 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   movie/models.py
 
 
+#### 10. Django Admin Interface
+
+        Works:
+
+        1. Create superuer
+        2. Configuring way to storing the images (MEDIA_ROOT)
+        3. Configuring way to handle the media served from MEDIA_ROOT
+        4. Serving the Stored Images
+        5. Adding Movie model to admin
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
+        modified:   movie/admin.py
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   media/movie/images/gladiator.jpg
+        new file:   media/movie/images/limitless.JPG
+        new file:   media/movie/images/luther.JPG
+        modified:   movie/admin.py
+
+
