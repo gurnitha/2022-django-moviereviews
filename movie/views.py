@@ -15,3 +15,8 @@ def home(request):
 
 def about(request):
 	return render(request, 'movie/about.html', {'name':'Movie Review'})
+
+
+def signup(request):
+	email = request.GET.get('email')
+	return render(request, 'movie/signup.html', {'email':email})

@@ -110,3 +110,11 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   README.md
         modified:   movie/templates/movie/home.html
         modified:   movie/views.py
+
+
+#### 8.2 Sending a Form to Another Page
+
+        modified:   movie/templates/movie/home.html
+        new file:   movie/templates/movie/signup.html
+        modified:   movie/urls.py
+        modified:   movie/views.py
