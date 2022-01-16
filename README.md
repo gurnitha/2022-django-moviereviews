@@ -52,3 +52,18 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         new file:   manage.py
 
 
+#### 3. Understanding the project structure
+
+        E:.
+        │   .gitignore
+        │   LICENSE
+        │   manage.py
+        │   README.md
+        │
+        └───config
+                asgi.py
+                settings.py
+                urls.py
+                wsgi.py
+                __init__.py
+
