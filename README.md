@@ -173,7 +173,7 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         4. Retrieve and display all movies
         5. Filtering retrieve by date of LIFO and display all movies
         6. Add bootstrap to news page
-        
+
         modified:   README.md
         modified:   config/settings.py
         modified:   config/urls.py
@@ -187,3 +187,34 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         new file:   news/tests.py
         new file:   news/urls.py
         new file:   news/views.py
+
+
+#### 13. Understanding the database
+
+        modified:   README.md
+
+        (moviereviews) λ python manage.py sqlmigrate movie 0001
+        BEGIN;
+        --
+        -- Create model Movie
+        --
+        CREATE TABLE "movie_movie" (
+	        "id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, 
+	        "title" varchar(100) NOT NULL, 
+	        "description" varchar(250) NOT NULL, 
+	        "image" varchar(100) NOT NULL, 
+	        "url" varchar(200) NOT NULL);
+        COMMIT;
+
+
+        (moviereviews) λ python manage.py sqlmigrate news 0001
+        BEGIN;
+        --
+        -- Create model News
+        --
+        CREATE TABLE "news_news" (
+	        "id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, 
+	        "headline" varchar(200) NOT NULL, 
+	        "body" text NOT NULL, 
+	        "date" date NOT NULL);
+        COMMIT;
