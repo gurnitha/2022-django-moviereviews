@@ -23,5 +23,32 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         creating your own Django projects.
 
 
+#### 2. Create Django Project
+
+
+        1. Install and check Python
+
+        - 	python --vesion
+
+        2. Create and activate virtualenv
+
+        - python -m venv venv39327
+
+        3. Installing Django
+
+        - pip install django==3.2.7
+
+        4. Creating Django Project
+
+        - django-admin startproject config .
+
+        5. Run server to test
+
+        new file:   config/__init__.py
+        new file:   config/asgi.py
+        new file:   config/settings.py
+        new file:   config/urls.py
+        new file:   config/wsgi.py
+        new file:   manage.py
 
 
