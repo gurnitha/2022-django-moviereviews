@@ -100,3 +100,13 @@ My exercise based on Beginning Django 3 Development by Greg Lim
 
         modified:   README.md
         modified:   movie/templates/movie/home.html
+
+
+#### 8. Adding A Search Form
+
+
+#### 8.1 Retrieving the values submitted
+
+        modified:   README.md
+        modified:   movie/templates/movie/home.html
+        modified:   movie/views.py

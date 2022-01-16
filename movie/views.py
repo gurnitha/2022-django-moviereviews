@@ -9,7 +9,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-	return render(request, 'movie/home.html', {'name':'Greg Lim'})
+	searchTerm = request.GET.get('searchMovie')
+	return render(request, 'movie/home.html', {'searchTerm':searchTerm})
 
 
 def about(request):
