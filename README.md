@@ -67,3 +67,16 @@ My exercise based on Beginning Django 3 Development by Greg Lim
                 wsgi.py
                 __init__.py
 
+
+#### 4. Create the first app 'movie'
+
+        modified:   README.md
+        modified:   config/settings.py
+        new file:   movie/__init__.py
+        new file:   movie/admin.py
+        new file:   movie/apps.py
+        new file:   movie/migrations/__init__.py
+        new file:   movie/models.py
+        new file:   movie/tests.py
+        new file:   movie/views.py
+
