@@ -87,3 +87,10 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   config/urls.py
         new file:   movie/urls.py
         modified:   movie/views.py
+
+
+#### 6. Generating HTML pages with templates
+
+        new file:   movie/templates/movie/about.html
+        new file:   movie/templates/movie/home.html
+        modified:   movie/views.py
