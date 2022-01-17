@@ -145,3 +145,11 @@ STATICFILES_DIRS = [
     # Find the static in here
     'config/static/',
 ]
+
+'''
+This redirects a user (who is not logged in) to
+the login page (http://localhost:8000/accounts/login/) 
+when they attempt to access an
+authorized page.
+'''
+LOGIN_URL = 'accounts:loginaccount'

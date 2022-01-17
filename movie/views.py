@@ -4,6 +4,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
 
 # Locals
 from movie.models import Movie, Review
@@ -51,6 +52,7 @@ def detail(request, movie_id):
 	return render(request, 'movie/detail.html', context)
 
 
+@login_required
 def createreview(request, movie_id):
 
 	# We first get the movie object from the database.
@@ -105,7 +107,7 @@ def createreview(request, movie_id):
 			return render(request, 'movie/createreview.html', {'form':ReviewForm(),'error':'bad data passedin'})
 
 
-
+@login_required
 def updatereview(request, review_id):
 
 	'''
@@ -156,6 +158,7 @@ def updatereview(request, review_id):
 			return render(request, 'movie/updatereview.html', {'review': review,'form':form,'error':'Bad data in form'})
 
 
+@login_required
 def deletereview(request, review_id):
 
 	'''

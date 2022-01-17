@@ -461,8 +461,39 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         1. Create deletereview
         2. Create path to delete a review
         3. Add link with detail page
-        
+
         modified:   movie/templates/movie/detail.html
         modified:   movie/urls.py
         modified:   movie/views.py
 
+
+#### 28. Authorization
+
+        We have implemented authentication where
+        we allow users to sign up and log in. But we
+        also need authorization which authorizes
+        access to certain pages only to logged in
+        users.
+
+        Currently, if a user manual enters the url to
+        create a review e.g.
+        http://localhost:8000/movie/2/create, they
+        can still access the form. We should authorize
+        access to creating/updating/deleting of
+        reviews only to logged in users. We also
+        authorize access to logout.
+
+
+        Works:
+
+        1. In movie/views.py : Add login_required to createreview, updatereview, deletereview view
+        2. In accounts/view.py: Add login_required to logoutaccount view
+        3. In settings.py: Add LOGIN_URL = 'accounts:loginaccount'
+        4. Test it out :)
+
+
+        modified:   README.md
+        modified:   accounts/views.py
+        modified:   config/settings.py
+        modified:   movie/urls.py
+        modified:   movie/views.py        
