@@ -436,7 +436,6 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   movie/views.py
 
 
-
 #### 26. Updating A Review
 
         Works:
@@ -451,6 +450,19 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   README.md
         modified:   movie/templates/movie/detail.html
         new file:   movie/templates/movie/updatereview.html
+        modified:   movie/urls.py
+        modified:   movie/views.py
+
+
+#### 27. Deleting A Review
+
+        Works:
+
+        1. Create deletereview
+        2. Create path to delete a review
+        3. Add link with detail page
+        
+        modified:   movie/templates/movie/detail.html
         modified:   movie/urls.py
         modified:   movie/views.py
 

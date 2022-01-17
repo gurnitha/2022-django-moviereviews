@@ -154,3 +154,19 @@ def updatereview(request, review_id):
 			'''
 		except ValueError:
 			return render(request, 'movie/updatereview.html', {'review': review,'form':form,'error':'Bad data in form'})
+
+
+def deletereview(request, review_id):
+
+	'''
+	You can see that deletereview is quite
+	straightforward. We get the review object and
+	call its delete method. Like for update, we
+	supply the logged-in user to ensure only the
+	user who created this review can delete it. We
+	then redirect back to the movie ’ s detail
+	page.
+	'''
+	review = get_object_or_404(Review, pk=review_id, user=request.user)
+	review.delete()
+	return redirect('movie:detail', review.movie.id)
