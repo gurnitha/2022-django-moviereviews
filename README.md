@@ -224,3 +224,21 @@ My exercise based on Beginning Django 3 Development by Greg Lim
 
         modified:   README.md
         modified:   movie/models.py
+
+
+#### 15. Extending Base Templates
+
+        Works:
+
+        1. Create base tamplate file
+        2. Activate Django template
+        3. Extends base template to all pages
+        4. Add footer to base template
+
+        modified:   README.md
+        modified:   config/settings.py
+        new file:   config/templates/base.html
+        modified:   movie/templates/movie/about.html
+        modified:   movie/templates/movie/home.html
+        modified:   movie/templates/movie/signup.html
+        modified:   news/templates/news/news.html
