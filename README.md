@@ -396,6 +396,33 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   movie/models.py
 
 
+#### 24. Creating A Review
+
+        We have seen how to create model objects
+        from the admin e.g. creating a movie object.
+        But how do we allow users to create their
+        own objects e.g. let users post a review from
+        the site? After all, not everyone should have
+        access to the admin panel.
+
+        Works:
+
+        1. Create ReviewForm class
+        2. Create createreview page
+        3. Create createreview view
+        4. Create path for review
+        5. Add link with detail
+        6. Test it out :)
+
+        NOTE: Instance of the reviews save in db
+
+        modified:   README.md
+        new file:   movie/forms.py
+        new file:   movie/templates/movie/createreview.html
+        modified:   movie/templates/movie/detail.html
+        modified:   movie/urls.py
+        modified:   movie/views.py
+
 
 
 
