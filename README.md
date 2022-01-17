@@ -424,6 +424,17 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   movie/views.py
 
 
+#### 25. Listing Review
+
+        Works:
+
+        1. Modify the detail view
+        2. Modify the detail page to render the reviews
+
+        modified:   README.md
+        modified:   movie/templates/movie/detail.html
+        modified:   movie/views.py
+
 
 
 

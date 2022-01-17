@@ -38,9 +38,14 @@ def signup(request):
 
 def detail(request, movie_id):
 	movie = get_object_or_404(Movie,pk=movie_id)
-	
+	# Using the filter function, we retrieve reviews
+	# for a particular movie only.
+	reviews = Review.objects.filter(movie = movie)
+
+	# We then pass in reviews to detail.html via context.
 	context = {
-		'movie':movie
+		'movie':movie,
+		'reviews':reviews
 	}	
 
 	return render(request, 'movie/detail.html', context)
