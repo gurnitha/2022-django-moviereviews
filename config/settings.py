@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # Locals
     'movie.apps.MovieConfig',
     'news.apps.NewsConfig',
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [

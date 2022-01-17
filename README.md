@@ -271,11 +271,42 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         2. Create movie detail path
         3. Create view detail
         4. Add link in home page to go to page detail
-        
+
         new file:   movie/templates/movie/detail.html
         modified:   movie/templates/movie/home.html
         modified:   movie/urls.py
         modified:   movie/views.py
 
+
+#### 18. Creating A User
+
+
+#### 18.1 Sign up a new user using the default UserCreationForm
+
+        When the user submits the signup form, we
+        will have to handle the request and create a
+        user in admin. To do so, do these:
+
+        Works:
+
+        1. Create a new app called 'accounts'
+        2. Create signupaccount page
+        3. Create path
+        4. Create signupaccount view with signup logic
+        5. Test it out by sign up new user :)
+
+        modified:   README.md
+        new file:   accounts/__init__.py
+        new file:   accounts/admin.py
+        new file:   accounts/apps.py
+        new file:   accounts/migrations/__init__.py
+        new file:   accounts/models.py
+        new file:   accounts/templates/accounts/signupaccount.html
+        new file:   accounts/tests.py
+        new file:   accounts/urls.py
+        new file:   accounts/views.py
+        modified:   config/settings.py
+        modified:   config/templates/base.html
+        modified:   config/urls.py
 
 
