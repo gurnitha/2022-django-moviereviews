@@ -380,3 +380,23 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   accounts/views.py
         modified:   config/templates/base.html
 
+
+#### 23. Letting User To Post Movie Review
+
+        We will now implement letting logged-in
+        users post reviews for movies. 
+
+        Works:
+
+        1. Create Review model, add relationship with User and Movie models
+
+        modified:   README.md
+        modified:   movie/admin.py
+        new file:   movie/migrations/0002_review.py
+        modified:   movie/models.py
+
+
+
+
+
+
