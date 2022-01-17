@@ -310,3 +310,26 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   config/urls.py
 
 
+#### 18.2 Customizing UserCreationForm
+
+        The UserCreationForm currently shows quite
+        a lot of extra help text (included by default)
+        which are cluttering our form. 
+
+        We can actually customize the UserCreationForm
+        which is a big topic on its own. Here, we will
+        simply remove the default help text.
+
+        To customize the form, we have to create a
+        new class which extends UserCreationForm.
+
+        Works:
+
+        1. Create a new file forms.py
+        2. Withing it, create UserCreateForm class with  logic
+        3. Modify signupaccount view
+        4. Test it out :)
+
+        modified:   README.md
+        new file:   accounts/forms.py
+        modified:   accounts/views.py

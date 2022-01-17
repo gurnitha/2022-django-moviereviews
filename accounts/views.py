@@ -2,13 +2,14 @@
 
 # Django modules
 from django.shortcuts import render
-from django.contrib.auth.forms import UserCreationForm
+# from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login
 from django.shortcuts import redirect
 from django.db import IntegrityError
 
 # Locals
+from accounts.forms import UserCreateForm
 
 # Create your views here.
 
@@ -29,7 +30,7 @@ def signupaccount(request):
 	user.
 	'''
 	if request.method == 'GET':
-		return render(request, 'accounts/signupaccount.html', {'form':UserCreationForm})
+		return render(request, 'accounts/signupaccount.html', {'form':UserCreateForm})
 
 	else:
 		'''
@@ -92,7 +93,7 @@ def signupaccount(request):
 				we have to use try and except
 				'''
 			except IntegrityError:
-				return render(request, 'accounts/signupaccount.html', {'form':UserCreationForm, 'error':'Username already taken. Choose new username.'})
+				return render(request, 'accounts/signupaccount.html', {'form':UserCreateForm, 'error':'Username already taken. Choose new username.'})
 		
 			'''
 			If the passwords don’t match, we render the
@@ -101,7 +102,7 @@ def signupaccount(request):
 			match’.
 			'''
 		else:
-			return render(request, 'accounts/signupaccount.html', {'form':UserCreationForm, 'error':'Passwords do not match'})
+			return render(request, 'accounts/signupaccount.html', {'form':UserCreateForm, 'error':'Passwords do not match'})
 
 
-	return render(request, 'accounts/signupaccount.html', {'form':UserCreationForm})
+	return render(request, 'accounts/signupaccount.html', {'form':UserCreateForm})
