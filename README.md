@@ -348,3 +348,17 @@ My exercise based on Beginning Django 3 Development by Greg Lim
 
         modified:   README.md
         modified:   config/templates/base.html
+
+
+#### 21. Logout
+
+        Works:
+
+        1. Create path for logout
+        2. Create logout view
+        3. Add link to navbar
+
+        modified:   README.md
+        modified:   accounts/urls.py
+        modified:   accounts/views.py
+        modified:   config/templates/base.html
