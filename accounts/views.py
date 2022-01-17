@@ -4,7 +4,8 @@
 from django.shortcuts import render
 # from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from django.contrib.auth import login, logout
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import login, logout, authenticate
 from django.shortcuts import redirect
 from django.db import IntegrityError
 
@@ -111,3 +112,65 @@ def signupaccount(request):
 def logoutaccount(request):
 	logout(request)
 	return redirect('movie:home')
+
+
+def loginaccount(request):
+
+	'''
+	loginaccount will be similar to
+	signupaccount. 
+
+	We first check if the
+	request received is a GET or POST request. If
+	it is a GET request, it means that it’s a user
+	navigating to the sign up form via the url
+	localhost:8000/accounts/loginaccount, in
+	which case we simply send them to
+	loginaccount.html with the form.
+
+	But if it’s a POST request, it means that it’s a
+	form submission to create a new user. And
+	we move to the else block to create a new
+	user.
+	'''
+
+	if request.method == 'GET':
+		return render(request, 'accounts/loginaccount.html', {'form':AuthenticationForm})
+
+		'''
+		Much like the
+		UserCreationForm for signup, Django
+		provides the AuthenticationForm to quickly
+		get a login form up and running.
+
+		If the request type is not GET (user submits
+		the login form and sends a POST request), we
+		proceed to authenticate the user with the
+		values he entered in the username and
+		password fields.	
+		'''
+	else:
+		user = authenticate(request,
+				username=request.POST['username'],
+				password=request.POST['password'])
+
+		'''
+		If the user returned from authenticate is
+		None, i.e. we are unable to find an existing
+		user with the supplied username/password,
+		we return the user to loginaccount.html with
+		the error ‘username and password do not
+		match’ 
+		'''
+		if user is None:
+			return render(request,'accounts/loginaccount.html', {'form': AuthenticationForm(), 'error': 'username and password do not match'})
+		
+			'''
+			Else, it means the authentication is successful
+			and we log in the user and redirect her to the
+			home page.
+			'''
+		else:
+			login(request,user)
+			return redirect('movie:home')
+

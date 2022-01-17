@@ -362,3 +362,21 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   accounts/urls.py
         modified:   accounts/views.py
         modified:   config/templates/base.html
+
+
+#### 22. Log In
+
+        Works:
+
+        1. Create login page
+        2. Create path for login
+        3. Create loin view
+        4. Add link to navbar
+        5. Test it out :)
+
+        modified:   README.md
+        new file:   accounts/templates/accounts/loginaccount.html
+        modified:   accounts/urls.py
+        modified:   accounts/views.py
+        modified:   config/templates/base.html
+
