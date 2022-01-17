@@ -261,3 +261,21 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   movie/templates/movie/home.html
         modified:   movie/templates/movie/signup.html
         modified:   news/templates/news/news.html
+
+
+#### 17. Movie Detail Page
+
+        Works:
+
+        1. Create movie detail page
+        2. Create movie detail path
+        3. Create view detail
+        4. Add link in home page to go to page detail
+        
+        new file:   movie/templates/movie/detail.html
+        modified:   movie/templates/movie/home.html
+        modified:   movie/urls.py
+        modified:   movie/views.py
+
+
+
