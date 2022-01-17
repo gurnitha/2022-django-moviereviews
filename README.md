@@ -278,10 +278,10 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   movie/views.py
 
 
-#### 18. Creating A User
+#### 18 & 19. Creating A Signup Form and Creating A User
 
 
-#### 18.1 Sign up a new user using the default UserCreationForm
+#### 18 & 19.1 Sign up a new user using the default UserCreationForm
 
         When the user submits the signup form, we
         will have to handle the request and create a
@@ -310,7 +310,7 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   config/urls.py
 
 
-#### 18.2 Customizing UserCreationForm
+#### 18 & 19.2 Customizing UserCreationForm
 
         The UserCreationForm currently shows quite
         a lot of extra help text (included by default)
@@ -333,3 +333,8 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   README.md
         new file:   accounts/forms.py
         modified:   accounts/views.py
+
+
+#### 18 & 19.3 House keeping: Modified README.md file
+
+        modified:   README.md
