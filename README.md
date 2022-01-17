@@ -242,3 +242,22 @@ My exercise based on Beginning Django 3 Development by Greg Lim
         modified:   movie/templates/movie/home.html
         modified:   movie/templates/movie/signup.html
         modified:   news/templates/news/news.html
+
+
+#### 16. Static Files
+
+        Works: 
+
+        1. Create static folder
+        2. Add static files to it
+        3. Create path for static files
+        4. Load tatic files
+
+        modified:   README.md
+        modified:   config/settings.py
+        new file:   config/static/images/movie.png
+        modified:   config/templates/base.html
+        modified:   movie/templates/movie/about.html
+        modified:   movie/templates/movie/home.html
+        modified:   movie/templates/movie/signup.html
+        modified:   news/templates/news/news.html

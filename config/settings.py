@@ -135,3 +135,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 # MEDIA_URL is the URL that handles the
 # media served from MEDIA_ROOT.
 MEDIA_URL = '/media/'
+
+# STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    # Static file
+    os.path.join(BASE_DIR, "static"), 
+    # Find the static in here
+    'config/static/',
+]
