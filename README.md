@@ -338,3 +338,13 @@ My exercise based on Beginning Django 3 Development by Greg Lim
 #### 18 & 19.3 House keeping: Modified README.md file
 
         modified:   README.md
+
+
+#### 20. Showing If A User Is Logged In
+
+        Works:
+
+        1. Add conditional to navbar
+
+        modified:   README.md
+        modified:   config/templates/base.html
