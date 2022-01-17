@@ -437,4 +437,20 @@ My exercise based on Beginning Django 3 Development by Greg Lim
 
 
 
+#### 26. Updating A Review
+
+        Works:
+
+        1. Create updatereview page
+        2. Create updatereview view
+        3. Create path to update review
+        4. Add link with detail page
+        5. Test it out :)
+
+
+        modified:   README.md
+        modified:   movie/templates/movie/detail.html
+        new file:   movie/templates/movie/updatereview.html
+        modified:   movie/urls.py
+        modified:   movie/views.py
 

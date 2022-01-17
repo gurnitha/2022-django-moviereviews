@@ -103,3 +103,54 @@ def createreview(request, movie_id):
 			'''
 		except ValueError:
 			return render(request, 'movie/createreview.html', {'form':ReviewForm(),'error':'bad data passedin'})
+
+
+
+def updatereview(request, review_id):
+
+	'''
+	We first retrieve the review object with the review id.
+	We also supply the logged-in user
+	to ensure that other users can't access the
+	review e.g. if they manually enter the url path
+	in the browser. Only the user who created this
+	review can update/delete it.
+	'''
+	review = get_object_or_404(Review,pk=review_id,user=request.user)
+
+	'''
+	If the request type is GET, it means they
+	navigated to the page from the movie details
+	page. We thus render the ReviewForm we
+	used previously in creating a review, but this
+	time, we pass in the review object into the
+	form so that the form’s fields will be
+	populated with the object’s values, ready for
+	the user to edit. See how Django’s
+	ModelForm saves us so much work!
+	'''
+	if request.method =='GET':
+		form = ReviewForm(instance=review)
+		return render(request, 'movie/updatereview.html', {'review': review,'form':form})
+	
+		'''
+		In the else block, i.e. the request type is
+		POST which means the user is trying to
+		submit the update form. We retrieve the
+		values from the form and do a form.save() to
+		update the existing review. We then redirect
+		back to the movie details page.
+		'''
+	else:
+		try:
+			form = ReviewForm(request.POST, instance=review)
+			form.save()
+			return redirect('movie:detail', review.movie.id)
+
+			'''
+			If there is a problem with the content the user
+			has provided, we catch it with the ValueError
+			exception.
+			'''
+		except ValueError:
+			return render(request, 'movie/updatereview.html', {'review': review,'form':form,'error':'Bad data in form'})
